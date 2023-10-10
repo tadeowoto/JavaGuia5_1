@@ -1,19 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 
-/**
- *
- * @author Tadeo
- */
+
+
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        //sumar lista
+        int vector1[] = {5, 3, 5, 10, 20, 30, 2, 20, 12, 33};
+        
+        Arreglo.sumarLista(vector1);
+        
+        //buscarMayor
+        
+        int[][] matriz1={{32,23,11},{10,2}};        
+        
+        
+        
     }
-    
+
 }
