@@ -1,9 +1,6 @@
 
-
-
-
 public class Arreglo {
-    
+
     public static void sumarLista(int[] vector1) {
 
         int suma = 0;
@@ -37,12 +34,88 @@ public class Arreglo {
 
     }
 
+    public static void buscarMayor(int[][] matriz1) {
 
-    
-    public static void buscarMayor(int [][]matriz1){
-        
+        int elElegido = matriz1[0][0];
+
+        for (int i = 0; i < 3; i++) {
+
+            for (int j = 0; j < matriz1[i].length; j++) {
+
+                if (matriz1[i][j] > elElegido) {
+                    elElegido = matriz1[i][j];
+                }
+
+            }
+
+        }
+
+        System.out.println("el elemento mayor es " + elElegido);
+
     }
 
-  
+    public static int cuentaVocales(String cadena) {
+
+        int cantidadVocales = 0;
+        int aux = 0;
+        char[] vectorFantasma = new char[cadena.length()];
+
+        //meto la palabra en un arreglo
+        for (int i = 0; i < cadena.length(); i++) {
+
+            vectorFantasma[i] = cadena.charAt(i);
+
+        }
+
+        for (int i = 0; i < cadena.length(); i++) {
+
+            if (vectorFantasma[i] == 'a' || vectorFantasma[i] == 'e' || vectorFantasma[i] == 'i' || vectorFantasma[i] == 'o' || vectorFantasma[i] == 'u') {
+                cantidadVocales++;
+            }
+
+        }
+
+        return cantidadVocales;
+
+    }
+
+    public static int cuentaCaracter(String cadena, char caracter) {
+
+        int cantidadCaracter = 0;
+        int aux = 0;
+        char[] vectorFantasma = new char[cadena.length()];
+
+        //meto la palabra en un arreglo
+        for (int i = 0; i < cadena.length(); i++) {
+
+            vectorFantasma[i] = cadena.charAt(i);
+
+        }
+
+        //verifico la cantidad de veces que se repitio el caracter
+        for (int i = 0; i < cadena.length(); i++) {
+
+            if (vectorFantasma[i] == caracter) {
+                cantidadCaracter++;
+            }
+
+        }
+
+        return cantidadCaracter;
+
+    }
+
+
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
 }
